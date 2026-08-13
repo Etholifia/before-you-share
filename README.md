@@ -2,26 +2,6 @@
 
 Interactive bilingual landing page for **Before You Share**, a media and information literacy game.
 
-## Deploy on GitHub Pages
-
-1. Upload the files in this folder to the repository root.
-2. In GitHub, open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select `main` and `/ (root)`.
-5. Save.
-
-The site should then appear at:
-
-`https://etholifia.github.io/before-you-share/`
-
-## Before publishing
-
-Replace the placeholder itch.io URL in `index.html`:
-
-`https://itch.io/`
-
-with the real game page.
-
 ## Assets
 
 This first package deliberately uses CSS-generated visuals only. It does **not** include Boss or 小X artwork.
