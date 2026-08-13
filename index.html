@@ -6,11 +6,16 @@
   <meta name="theme-color" content="#f3ecdc">
   <meta name="description" content="Before You Share is an interactive media and information literacy game about reviewing posts, investigating sources, and deciding what deserves another look.">
   <title>Before You Share — Media & Information Literacy Game</title>
-  <link rel="stylesheet" href="./styles.css?v=19">
+  <link rel="stylesheet" href="./styles.css?v=20">
   <style>
     #webgl-canvas { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; pointer-events: none; }
     html, body { background: transparent !important; }
     .hero-sticky, .shift, .workflow, .case, .mil, .play { background: transparent !important; }
+    html.webgl-fallback, html.webgl-fallback body { background: #f4eddd !important; }
+    html.webgl-fallback .hero-sticky, html.webgl-fallback .case { background: #f4eddd !important; }
+    html.webgl-fallback .shift, html.webgl-fallback .mil { background: #fffaf0 !important; }
+    html.webgl-fallback .workflow { background: #191c25 !important; }
+    html.webgl-fallback .play { background: #4d79d8 !important; }
   </style>
 </head>
 <body class="intro-locked">
@@ -22,7 +27,7 @@
       <p>LOADING FEED...</p>
     </div>
   </div>
-  
+
   <div id="intro-overlay">
     <div class="intro-hole">
       <img src="./assets/monitor-frame.png" class="intro-monitor" alt="">
@@ -89,7 +94,7 @@
             <span class="w-share">SHARE</span>
           </h1>
           <div class="hero-foot">
-            <p data-i18n="heroDeck">A post lands on your desk. The clock is moving. The source is messy. What deserves another look before it travels any further?</p>
+            <p data-i18n="heroDeck">A post lands on your desk. The clock is moving. Trace what you can, compare the clues, and decide whether it is ready to travel.</p>
             <div class="actions">
               <a class="btn primary magnetic" href="#case"><span data-i18n="heroTry">TRY A 60-SECOND CASE</span><b>↘</b></a>
               <a class="btn magnetic" href="#mil"><span data-i18n="heroMil">EXPLORE MIL</span><b>↓</b></a>
@@ -107,10 +112,10 @@
     <section class="shift pad" id="shift">
       <div class="kicker reveal"><span>01</span><span data-i18n="shiftKicker">THE SHIFT</span></div>
       <div class="shift-grid">
-        <h2 class="reveal" data-i18n="shiftTitle">YOU ARE NOT THE TRUTH MACHINE.</h2>
+        <h2 class="reveal" data-i18n="shiftTitle">EVERY SHARE STARTS WITH A JUDGMENT.</h2>
         <div class="body-copy reveal">
-          <p data-i18n="shiftP1">You are the person who decides whether a claim moves forward, slows down, or gets checked again.</p>
-          <p data-i18n="shiftP2">Before You Share turns media literacy into a workplace rhythm: review the post, investigate what is missing, then make a proportionate call.</p>
+          <p data-i18n="shiftP1">Claims arrive with missing context, uneven sources, and pressure to act quickly.</p>
+          <p data-i18n="shiftP2">The shift follows a simple rhythm: read the claim, open the clues, compare the evidence, and choose the next step.</p>
         </div>
       </div>
       <div class="ticker" aria-hidden="true">
@@ -125,9 +130,9 @@
           <span>REVIEW</span><span>INVESTIGATE</span><span>DECIDE</span>
         </div>
         <div class="steps">
-          <article><b>01</b><h3 data-i18n="reviewTitle">Read what is actually claimed.</h3><p data-i18n="reviewText">Not what the headline implies. Not what the comments assume.</p></article>
-          <article><b>02</b><h3 data-i18n="investigateTitle">Look sideways.</h3><p data-i18n="investigateText">Who posted it? Where did it start? What context is missing?</p></article>
-          <article><b>03</b><h3 data-i18n="decideTitle">Make a proportionate call.</h3><p data-i18n="decideText">Sometimes the responsible answer is not “false.” It is “not ready to share.”</p></article>
+          <article><b>01</b><h3 data-i18n="reviewTitle">Read the claim closely.</h3><p data-i18n="reviewText">Pin down the exact claim, the date, and the evidence attached to it.</p></article>
+          <article><b>02</b><h3 data-i18n="investigateTitle">Follow the trail.</h3><p data-i18n="investigateText">Check the account, source, image, date, and surrounding context.</p></article>
+          <article><b>03</b><h3 data-i18n="decideTitle">Choose the next step.</h3><p data-i18n="decideText">Share it, hold it for verification, or keep investigating.</p></article>
         </div>
       </div>
     </section>
@@ -186,8 +191,8 @@
     <section class="mil pad" id="mil">
       <div class="kicker reveal"><span>04</span><span data-i18n="milKicker">WHY MEDIA & INFORMATION LITERACY</span></div>
       <div class="mil-head reveal">
-        <h2 data-i18n="milTitle">THE FEED IS FAST.<br>YOUR JUDGMENT CAN BE SLOWER.</h2>
-        <p data-i18n="milIntro">Media and Information Literacy helps people engage critically with information, navigate digital environments, and respond to misinformation and disinformation.</p>
+        <h2 data-i18n="milTitle">MAKE ROOM FOR<br>A SECOND LOOK.</h2>
+        <p data-i18n="milIntro">Media and Information Literacy supports critical engagement with information and the systems that carry it. Those habits matter most when a post is moving fast.</p>
       </div>
 
       <div class="stats">
@@ -226,8 +231,8 @@
       <div class="play-inner reveal">
         <p class="eyebrow" data-i18n="playEyebrow">THE DESK IS OPEN</p>
         <h2 data-i18n="playTitle">READY FOR<br>YOUR SHIFT?</h2>
-        <p data-i18n="playCopy">The Windows demo is free. Review fictional posts, investigate clues, and see how your decisions shape the shift.</p>
-        <a class="btn huge primary magnetic" href="https://itch.io/" target="_blank" rel="noopener noreferrer">
+        <p data-i18n="playCopy">The Windows demo is free. Step into the review desk, investigate fictional posts, and work through the full shift.</p>
+        <a class="btn huge primary magnetic" href="https://etholiia.itch.io/before-you-share" target="_blank" rel="noopener noreferrer">
           <span data-i18n="playButton">PLAY THE DEMO ON ITCH.IO</span><b>↗</b>
         </a>
         <div class="social-links">
@@ -258,7 +263,34 @@
       }
     }
   </script>
-  <script type="module" src="./webgl-journey.js?v=19"></script>
-  <script type="module" src="./script.js?v=19"></script>
+  <script>
+    (() => {
+      let webglReady = false;
+      const unlock = () => {
+        document.documentElement.classList.add('webgl-fallback');
+        document.body.classList.remove('intro-locked');
+        const loader = document.getElementById('loader');
+        const overlay = document.getElementById('intro-overlay');
+        if (loader) loader.classList.add('hidden');
+        if (overlay) {
+          overlay.classList.add('hidden');
+          setTimeout(() => overlay.remove(), 600);
+        }
+      };
+      window.__BYS_UNLOCK_FALLBACK__ = unlock;
+      const timer = setTimeout(() => {
+        if (!webglReady) unlock();
+      }, 6000);
+      addEventListener('bys-webgl-ready', () => {
+        webglReady = true;
+        clearTimeout(timer);
+      }, { once: true });
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        requestAnimationFrame(unlock);
+      }
+    })();
+  </script>
+  <script type="module" src="./webgl-journey-v2.js?v=20"></script>
+  <script type="module" src="./script.js?v=20"></script>
 </body>
 </html>

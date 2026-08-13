@@ -4,14 +4,14 @@ const copy = {
   en: {
     brand:"MEDIA LITERACY SHIFT", navShift:"THE SHIFT", navCase:"TRY A CASE", navMil:"WHY MIL", navPlay:"DEMO",
     heroEyebrow:"AN INTERACTIVE MEDIA & INFORMATION LITERACY GAME",
-    heroDeck:"A post lands on your desk. The clock is moving. The source is messy. What deserves another look before it travels any further?",
+    heroDeck:"A post lands on your desk. The clock is moving. Trace what you can, compare the clues, and decide whether it is ready to travel.",
     heroTry:"TRY A 60-SECOND CASE", heroMil:"EXPLORE MIL", dragNote:"Drag the signals. Question the feed.",
-    shiftKicker:"THE SHIFT", shiftTitle:"YOU ARE NOT THE TRUTH MACHINE.",
-    shiftP1:"You are the person who decides whether a claim moves forward, slows down, or gets checked again.",
-    shiftP2:"Before You Share turns media literacy into a workplace rhythm: review the post, investigate what is missing, then make a proportionate call.",
-    workflowKicker:"THE WORKFLOW", reviewTitle:"Read what is actually claimed.", reviewText:"Not what the headline implies. Not what the comments assume.",
-    investigateTitle:"Look sideways.", investigateText:"Who posted it? Where did it start? What context is missing?",
-    decideTitle:"Make a proportionate call.", decideText:"Sometimes the responsible answer is not “false.” It is “not ready to share.”",
+    shiftKicker:"THE SHIFT", shiftTitle:"EVERY SHARE STARTS WITH A JUDGMENT.",
+    shiftP1:"Claims arrive with missing context, uneven sources, and pressure to act quickly.",
+    shiftP2:"The shift follows a simple rhythm: read the claim, open the clues, compare the evidence, and choose the next step.",
+    workflowKicker:"THE WORKFLOW", reviewTitle:"Read the claim closely.", reviewText:"Pin down the exact claim, the date, and the evidence attached to it.",
+    investigateTitle:"Follow the trail.", investigateText:"Check the account, source, image, date, and surrounding context.",
+    decideTitle:"Choose the next step.", decideText:"Share it, hold it for verification, or keep investigating.",
     caseKicker:"MINI CASE LAB", caseTitle:"DON'T TRUST THE CARD.<br>TOUCH THE EVIDENCE.",
     caseIntro:"This training case is fictional. Open the account, source, and image checks before you decide what happens to the post.",
     caseMeta:"posted 6 min ago · 12.8K shares", training:"FICTIONAL TRAINING POST",
@@ -19,8 +19,8 @@ const copy = {
     evidenceTitle:"EVIDENCE LOG", accountCheck:"CHECK ACCOUNT", accountHint:"Who is speaking?", sourceCheck:"TRACE SOURCE", sourceHint:"Where did it start?",
     imageCheck:"INSPECT IMAGE", imageHint:"Does the media match?", readoutDefault:"Choose a check. Evidence will appear here.",
     decisionPrompt:"YOUR CALL", hold:"HOLD & VERIFY", share:"SHARE", reset:"RESET CASE ↺",
-    milKicker:"WHY MEDIA & INFORMATION LITERACY", milTitle:"THE FEED IS FAST.<br>YOUR JUDGMENT CAN BE SLOWER.",
-    milIntro:"Media and Information Literacy helps people engage critically with information, navigate digital environments, and respond to misinformation and disinformation.",
+    milKicker:"WHY MEDIA & INFORMATION LITERACY", milTitle:"MAKE ROOM FOR<br>A SECOND LOOK.",
+    milIntro:"Media and Information Literacy supports critical engagement with information and the systems that carry it. Those habits matter most when a post is moving fast.",
     statCreators:"digital content creators do not systematically fact-check information before sharing it online.",
     statConcern:"of citizens are worried about the impact of online disinformation.",
     statSocial:"of internet users frequently use social media to stay informed about current events.",
@@ -28,22 +28,22 @@ const copy = {
     unescoCopy:"Explore UNESCO's Media and Information Literacy resources, initiatives, publications, and learning materials.",
     unescoCta:"OPEN UNESCO MIL ↗", independent:"Before You Share is an independent project. It is not affiliated with or endorsed by UNESCO.",
     playEyebrow:"THE DESK IS OPEN", playTitle:"READY FOR<br>YOUR SHIFT?",
-    playCopy:"The Windows demo is free. Review fictional posts, investigate clues, and see how your decisions shape the shift.",
-    playButton:"PLAY THE DEMO ON ITCH.IO", itchNote:"Itch.io link placeholder — replace this with the final project URL.",
+    playCopy:"The Windows demo is free. Step into the review desk, investigate fictional posts, and work through the full shift.",
+    playButton:"PLAY THE DEMO ON ITCH.IO", itchNote:"Free Windows demo · hosted on itch.io.",
     footerTag:"An independent media literacy game.",
     footerLegal:"Website source code: MPL-2.0. Original game artwork, branding, screenshots, and narrative assets: © Etholifia, all rights reserved unless otherwise stated."
   },
   zh: {
     brand:"媒体素养值班中", navShift:"你的班次", navCase:"试试案例", navMil:"为什么是 MIL", navPlay:"试玩",
     heroEyebrow:"一款互动式媒体与信息素养游戏",
-    heroDeck:"一条帖子落到你的桌面。时间在走，来源混乱。在它继续传播之前，什么值得你多看一眼？",
+    heroDeck:"一条帖子落到你的桌面。时间在走。沿着线索查一查，对照证据，再决定它是否已经适合继续传播。",
     heroTry:"60 秒迷你案例", heroMil:"了解 MIL", dragNote:"拖动这些信息。怀疑你的信息流。",
-    shiftKicker:"你的班次", shiftTitle:"你不是一台“真相机器”。",
-    shiftP1:"你要决定的，是一条信息应该继续前进、暂缓，还是需要再次核验。",
-    shiftP2:"《转发之前》把媒体素养变成工作节奏：阅读帖子、调查缺失的信息，再作出适度的判断。",
-    workflowKicker:"工作流程", reviewTitle:"先看它到底声称了什么。", reviewText:"不是标题暗示了什么，也不是评论区以为了什么。",
-    investigateTitle:"向旁边看。", investigateText:"谁发布的？最初来源在哪里？缺失了什么语境？",
-    decideTitle:"作出适度的判断。", decideText:"负责任的答案有时不是“假的”，而是“现在还不适合转发”。",
+    shiftKicker:"你的班次", shiftTitle:"每一次转发，都是一次判断。",
+    shiftP1:"帖子常常带着缺失的语境、不完整的来源，以及催促人立刻行动的节奏来到面前。",
+    shiftP2:"你的班次有一套简单节奏：读清主张、打开线索、对照证据，再决定下一步。",
+    workflowKicker:"工作流程", reviewTitle:"先读清主张。", reviewText:"确认它具体说了什么、发生在什么时候，以及附带了哪些证据。",
+    investigateTitle:"沿着线索继续找。", investigateText:"看看账号、来源、图片、日期和周围语境。",
+    decideTitle:"决定下一步。", decideText:"转发、暂缓核验，或者继续调查。",
     caseKicker:"迷你案例实验室", caseTitle:"别只相信卡片。<br>去碰证据。",
     caseIntro:"这是一个完全虚构的训练案例。先检查账号、来源和图片，再决定怎么处理帖子。",
     caseMeta:"6 分钟前发布 · 1.28 万次转发", training:"虚构训练帖子",
@@ -51,16 +51,16 @@ const copy = {
     evidenceTitle:"证据记录", accountCheck:"检查账号", accountHint:"是谁在说？", sourceCheck:"追溯来源", sourceHint:"最初从哪里来？",
     imageCheck:"检查图片", imageHint:"媒体内容对得上吗？", readoutDefault:"选择一项检查，证据会显示在这里。",
     decisionPrompt:"你的决定", hold:"暂缓并核验", share:"转发", reset:"重置案例 ↺",
-    milKicker:"为什么需要媒体与信息素养", milTitle:"信息流很快。<br>你的判断可以慢一点。",
-    milIntro:"媒体与信息素养帮助人们批判性地接触信息、理解数字环境，并应对错误信息与虚假信息。",
+    milKicker:"为什么需要媒体与信息素养", milTitle:"给信息多留一次<br>回看的机会。",
+    milIntro:"媒体与信息素养帮助人们批判性地接触信息，并理解承载这些信息的数字环境。帖子传播得越快，这些习惯越重要。",
     statCreators:"的数字内容创作者在分享网络信息前不会系统性地进行事实核查。",
     statConcern:"的公众担忧网络虚假信息带来的影响。",
     statSocial:"的互联网用户经常通过社交媒体了解时事。",
     learnBeyond:"在游戏之外继续学习", unescoCopy:"探索 UNESCO 的媒体与信息素养资源、倡议、出版物与学习材料。",
     unescoCta:"前往 UNESCO MIL ↗", independent:"《转发之前》是独立项目，与 UNESCO 不存在隶属、合作或官方背书关系。",
     playEyebrow:"工位已经亮起", playTitle:"准备开始<br>你的班次了吗？",
-    playCopy:"Windows Demo 免费开放。审核虚构帖子、调查线索，看看你的判断如何改变这一天。",
-    playButton:"前往 ITCH.IO 下载试玩", itchNote:"当前为 itch.io 占位链接，之后替换为游戏最终页面。",
+    playCopy:"Windows Demo 免费开放。进入审核工位，调查虚构帖子，体验完整的一次班次。",
+    playButton:"前往 ITCH.IO 下载试玩", itchNote:"Windows 免费试玩版 · 托管于 itch.io。",
     footerTag:"一款独立媒体素养游戏。",
     footerLegal:"网站源代码采用 MPL-2.0。原创游戏美术、品牌、截图与叙事素材除另有说明外 © Etholifia，保留全部权利。"
   }
@@ -79,7 +79,7 @@ function applyLang(next){
   });
   $("[data-lang]").textContent = lang === "en" ? "EN ↔ 中文" : "中文 ↔ EN";
   localStorage.setItem("bys-lang", lang);
-  
+
   $$("[data-lang-en]").forEach(el => el.hidden = (lang === "zh"));
   $$("[data-lang-zh]").forEach(el => el.hidden = (lang === "en"));
 
@@ -165,12 +165,12 @@ function loadCase() {
   currentCase = cases[Math.floor(Math.random() * cases.length)];
   const author = accounts.find(a => a.id === currentCase.post.account_id);
   const dataLang = lang === "zh" ? "zh-CN" : "en";
-  
+
   // Populate UI
   $(".avatar").textContent = (author.display_name["en"] || "?").charAt(0).toUpperCase();
   $(".post header strong").textContent = lang === "zh" ? author.handle : (author.handle_en || author.handle);
   $(".post-copy").textContent = currentCase.post.body[dataLang];
-  
+
   // Set evidence text dynamically based on the case/author
   const feedbackEn = currentCase.feedback?.lock?.["en"] || "The post uses emotional language without direct links.";
   const feedbackZh = currentCase.feedback?.lock?.["zh-CN"] || "帖子使用了煽动性语言，没有提供直接链接。";
