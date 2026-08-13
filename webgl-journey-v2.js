@@ -5,22 +5,22 @@ import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js'
 
 const popMessages = {
   en: [
-    'SOURCE?',
-    'WHO POSTED THIS?',
-    'DATE CHECK',
-    'CONTEXT MISSING',
-    'OLD IMAGE?',
-    'TRACE THE ORIGIN',
-    'PAUSE BEFORE SHARING'
+    'URGENT: Citywide shutdown tomorrow!',
+    'Free transit passes if you click now',
+    'Unbelievable: Mayor resigns amidst scandal',
+    'Are they hiding the true water levels?',
+    'Miracle cure found in common weed',
+    'Local schools secretly banning this book',
+    "Don't eat the new brand of imported fish!"
   ],
   zh: [
-    '来源呢？',
-    '是谁发布的？',
-    '检查日期',
-    '缺少语境',
-    '旧图片？',
-    '追溯原始来源',
-    '转发前先停一下'
+    '紧急通知：明天全市停课！',
+    '点击立刻领取免费公交卡',
+    '突发：市长因丑闻辞职',
+    '水库真实水位被隐瞒了吗？',
+    '路边杂草竟是神药，快转发给家人',
+    '本地学校正秘密封杀这本书',
+    '千万别吃这种新进口的海鲜！'
   ]
 };
 
