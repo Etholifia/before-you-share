@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MPL-2.0
+import { cases, accounts } from './cases.js';
 const copy = {
   en: {
     brand:"MEDIA LITERACY SHIFT", navShift:"THE SHIFT", navCase:"TRY A CASE", navMil:"WHY MIL", navPlay:"DEMO",
@@ -78,19 +79,28 @@ function applyLang(next){
   });
   $("[data-lang]").textContent = lang === "en" ? "EN ↔ 中文" : "中文 ↔ EN";
   localStorage.setItem("bys-lang", lang);
+  
+  $$("[data-lang-en]").forEach(el => el.hidden = (lang === "zh"));
+  $$("[data-lang-zh]").forEach(el => el.hidden = (lang === "en"));
+
+  if(currentCase) {
+    const dataLang = lang === "zh" ? "zh-CN" : "en";
+    $(".post-copy").textContent = currentCase.post.body[dataLang];
+    if($("[data-readout]").textContent !== copy[lang].readoutDefault) {
+      // Re-trigger the active evidence button text
+      const activeBtn = $(".evidence button.checked");
+      if(activeBtn) $("[data-readout]").textContent = evidenceText[lang][activeBtn.dataset.evidence];
+    }
+  }
 }
 $("[data-lang]").addEventListener("click",()=>applyLang(lang==="en"?"zh":"en"));
-applyLang(lang);
+// Wait to call applyLang until AFTER loadCase is defined. 
+// We will call applyLang(lang) at the bottom of the file instead.
 
-const cursor = $(".cursor");
+// Update CSS variables for radial gradients based on mouse
 addEventListener("pointermove", e=>{
   document.documentElement.style.setProperty("--mx", e.clientX+"px");
   document.documentElement.style.setProperty("--my", e.clientY+"px");
-  cursor.style.left=e.clientX+"px"; cursor.style.top=e.clientY+"px";
-});
-$$("a,button").forEach(el=>{
-  el.addEventListener("pointerenter",()=>cursor.classList.add("hot"));
-  el.addEventListener("pointerleave",()=>cursor.classList.remove("hot"));
 });
 
 function onScroll(){
@@ -148,18 +158,36 @@ $$(".drag").forEach(el=>{
   el.addEventListener("pointercancel",()=>down=false);
 });
 
-const evidenceText={
-  en:{
-    account:"ACCOUNT CHECK — Created two days ago. No verified connection to the fictional Metro Transit Office.",
-    source:"SOURCE TRACE — The screenshot cites an “internal memo,” but provides no document link, author, or publication record.",
-    image:"IMAGE CHECK — The pictured timetable is an old generic template; its date does not match the post."
-  },
-  zh:{
-    account:"账号检查——两天前刚注册，没有任何可验证信息能证明它与虚构的 Metro Transit Office 有关。",
-    source:"来源追溯——截图声称存在“内部备忘录”，但没有文件链接、作者或公开记录。",
-    image:"图片检查——图中的时刻表是旧版通用模板，日期与帖子描述不一致。"
-  }
-};
+let currentCase = null;
+let evidenceText = { en: {}, zh: {} };
+
+function loadCase() {
+  currentCase = cases[Math.floor(Math.random() * cases.length)];
+  const author = accounts.find(a => a.id === currentCase.post.account_id);
+  const dataLang = lang === "zh" ? "zh-CN" : "en";
+  
+  // Populate UI
+  $(".avatar").textContent = (author.display_name["en"] || "?").charAt(0).toUpperCase();
+  $(".post header strong").textContent = lang === "zh" ? author.handle : (author.handle_en || author.handle);
+  $(".post-copy").textContent = currentCase.post.body[dataLang];
+  
+  // Set evidence text dynamically based on the case/author
+  const feedbackEn = currentCase.feedback?.lock?.["en"] || "The post uses emotional language without direct links.";
+  const feedbackZh = currentCase.feedback?.lock?.["zh-CN"] || "帖子使用了煽动性语言，没有提供直接链接。";
+
+  evidenceText = {
+    en: {
+      account: `ACCOUNT CHECK — ${author.account_type["en"]}. ${author.verification["en"]}. Bio: ${author.bio["en"]}`,
+      source: `SOURCE TRACE — ${feedbackEn}`,
+      image: `IMAGE CHECK — ${currentCase.post.media_id ? "Media attached. Inspector flagged anomalies." : "No visual media attached to this claim."}`
+    },
+    zh: {
+      account: `账号检查——${author.account_type["zh-CN"]}。${author.verification["zh-CN"]}。简介：${author.bio["zh-CN"]}`,
+      source: `来源追溯——${feedbackZh}`,
+      image: `图片检查——${currentCase.post.media_id ? "包含媒体文件。检测器发现了异常。" : "这条帖子没有附带图片或视频。"}`
+    }
+  };
+}
 
 let checked=new Set();
 $$("[data-evidence]").forEach(btn=>btn.addEventListener("click",()=>{
@@ -192,7 +220,9 @@ $("[data-reset]").addEventListener("click",()=>{
   $("[data-count]").textContent="0";
   $("[data-readout]").innerHTML=copy[lang].readoutDefault;
   $("[data-result]").hidden=true;
+  loadCase();
 });
+loadCase(); // Initial load
 
 $$(".magnetic").forEach(el=>{
   el.addEventListener("pointermove",e=>{
@@ -202,3 +232,5 @@ $$(".magnetic").forEach(el=>{
   });
   el.addEventListener("pointerleave",()=>el.style.transform="");
 });
+
+applyLang(lang); // Call this after all variables are defined

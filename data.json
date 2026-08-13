@@ -1,0 +1,1989 @@
+{
+  "meta": {
+    "schema_version": "0.6.0",
+    "content_version": "2026-08-13.demo.4",
+    "default_locale": "zh-CN",
+    "supported_locales": [
+      "zh-CN",
+      "en"
+    ],
+    "source_note": "Rules adapt UNESCO MIL competencies. Account inspection, browser presets, media viewer and moderation actions are game mechanics."
+  },
+  "rules": [
+    {
+      "id": "source",
+      "code": "01",
+      "unlock_day": 1,
+      "title": {
+        "zh-CN": "核对来源",
+        "en": "Check the source"
+      },
+      "text": {
+        "zh-CN": "看看是谁发布的，这个来源是否可信。",
+        "en": "See who published it and whether the source is credible."
+      }
+    },
+    {
+      "id": "related_information",
+      "code": "02",
+      "unlock_day": 1,
+      "title": {
+        "zh-CN": "查找相关信息",
+        "en": "Find related information"
+      },
+      "text": {
+        "zh-CN": "拿不准时，再找一些相关资料互相对照。",
+        "en": "When unsure, find related material and compare it."
+      }
+    },
+    {
+      "id": "current_purpose",
+      "code": "03",
+      "unlock_day": 2,
+      "title": {
+        "zh-CN": "留意当前目的",
+        "en": "Consider the current purpose"
+      },
+      "text": {
+        "zh-CN": "内容可能是真的，也要看看它为何在此刻被这样传播。",
+        "en": "Even true material can be framed for a particular purpose now."
+      }
+    }
+  ],
+  "account_profiles": [
+    {
+      "id": "city_fresh",
+      "handle": "@城市新鲜事",
+      "handle_en": "@city_fresh_news",
+      "display_name": {
+        "zh-CN": "城市新鲜事",
+        "en": "City Fresh News"
+      },
+      "account_type": {
+        "zh-CN": "个人自媒体",
+        "en": "Personal media account"
+      },
+      "verification": {
+        "zh-CN": "无机构认证",
+        "en": "No institutional verification"
+      },
+      "bio": {
+        "zh-CN": "本地消息、生活见闻",
+        "en": "Local updates and daily life"
+      },
+      "registered": "2025-11-03"
+    },
+    {
+      "id": "harbor_eye",
+      "handle": "@海城随手拍",
+      "handle_en": "@harbor_snapshots",
+      "display_name": {
+        "zh-CN": "海城随手拍",
+        "en": "Harbor Snapshots"
+      },
+      "account_type": {
+        "zh-CN": "个人账号",
+        "en": "Personal account"
+      },
+      "verification": {
+        "zh-CN": "未认证",
+        "en": "Unverified"
+      },
+      "bio": {
+        "zh-CN": "记录身边事",
+        "en": "Things I see around town"
+      },
+      "registered": "2024-04-19"
+    },
+    {
+      "id": "health_office",
+      "handle": "@海城市健康办",
+      "handle_en": "@haicheng_health",
+      "display_name": {
+        "zh-CN": "海城市健康办",
+        "en": "Haicheng Health Office"
+      },
+      "account_type": {
+        "zh-CN": "公共机构",
+        "en": "Public institution"
+      },
+      "verification": {
+        "zh-CN": "机构认证",
+        "en": "Institution verified"
+      },
+      "bio": {
+        "zh-CN": "海城市健康事务信息发布",
+        "en": "Haicheng public health information"
+      },
+      "registered": "2019-06-12"
+    },
+    {
+      "id": "qingwan_daily",
+      "handle": "@青湾每日速报",
+      "handle_en": "@qingwan_daily",
+      "display_name": {
+        "zh-CN": "青湾每日速报",
+        "en": "Qingwan Daily Updates"
+      },
+      "account_type": {
+        "zh-CN": "个人自媒体",
+        "en": "Independent media account"
+      },
+      "verification": {
+        "zh-CN": "无机构认证",
+        "en": "No institutional verification"
+      },
+      "bio": {
+        "zh-CN": "青湾本地消息、交通、学校动态",
+        "en": "Local updates on Qingwan, transport and schools"
+      },
+      "registered": "2026-01-14"
+    },
+    {
+      "id": "northlake_snapshot",
+      "handle": "@北湖随手拍",
+      "handle_en": "@northlake_snapshot",
+      "display_name": {
+        "zh-CN": "北湖随手拍",
+        "en": "Northlake Snapshots"
+      },
+      "account_type": {
+        "zh-CN": "个人账号",
+        "en": "Personal account"
+      },
+      "verification": {
+        "zh-CN": "未认证",
+        "en": "Unverified"
+      },
+      "bio": {
+        "zh-CN": "散步拍照，偶尔记录北湖周边",
+        "en": "Walking, photos and occasional updates from around Northlake"
+      },
+      "registered": "2024-09-03"
+    },
+    {
+      "id": "miaoyu_commute",
+      "handle": "@苗雨今天迟到了",
+      "handle_en": "@miaoyu_commute",
+      "display_name": {
+        "zh-CN": "苗雨今天迟到了",
+        "en": "Miaoyu's Commute"
+      },
+      "account_type": {
+        "zh-CN": "个人账号",
+        "en": "Personal account"
+      },
+      "verification": {
+        "zh-CN": "未认证",
+        "en": "Unverified"
+      },
+      "bio": {
+        "zh-CN": "上班、吃饭、通勤碎碎念",
+        "en": "Work, food and commuting"
+      },
+      "registered": "2023-05-22"
+    },
+    {
+      "id": "oldtown_album",
+      "handle": "@旧城影集",
+      "handle_en": "@oldtown_album",
+      "display_name": {
+        "zh-CN": "旧城影集",
+        "en": "Oldtown Album"
+      },
+      "account_type": {
+        "zh-CN": "个人自媒体",
+        "en": "Independent media account"
+      },
+      "verification": {
+        "zh-CN": "无机构认证",
+        "en": "No institutional verification"
+      },
+      "bio": {
+        "zh-CN": "收集城市老照片和街区故事",
+        "en": "Old city photos and neighbourhood stories"
+      },
+      "registered": "2022-03-08"
+    },
+    {
+      "id": "readmore_club",
+      "handle": "@悦读会员季",
+      "handle_en": "@readmore_club",
+      "display_name": {
+        "zh-CN": "悦读会员季",
+        "en": "ReadMore Membership"
+      },
+      "account_type": {
+        "zh-CN": "企业账号",
+        "en": "Business account"
+      },
+      "verification": {
+        "zh-CN": "企业认证",
+        "en": "Business verified"
+      },
+      "bio": {
+        "zh-CN": "数字阅读会员、电子书优惠和阅读活动",
+        "en": "Digital reading memberships, e-book offers and reading campaigns"
+      },
+      "registered": "2024-02-16"
+    },
+    {
+      "id": "rivergate_notice",
+      "handle": "@河门生活通",
+      "handle_en": "@rivergate_updates",
+      "display_name": {
+        "zh-CN": "河门生活通",
+        "en": "Rivergate Updates"
+      },
+      "account_type": {
+        "zh-CN": "个人自媒体",
+        "en": "Independent media account"
+      },
+      "verification": {
+        "zh-CN": "无机构认证",
+        "en": "No institutional verification"
+      },
+      "bio": {
+        "zh-CN": "河门吃喝出行和本地消息",
+        "en": "Food, transport and local updates from Rivergate"
+      },
+      "registered": "2025-08-21"
+    },
+    {
+      "id": "metro_watch_ai",
+      "handle": "@东环地铁观察",
+      "handle_en": "@eastloop_watch",
+      "display_name": {
+        "zh-CN": "东环地铁观察",
+        "en": "East Loop Metro Watch"
+      },
+      "account_type": {
+        "zh-CN": "个人自媒体",
+        "en": "Independent media account"
+      },
+      "verification": {
+        "zh-CN": "无机构认证",
+        "en": "No institutional verification"
+      },
+      "bio": {
+        "zh-CN": "地铁见闻、线路消息、城市交通",
+        "en": "Metro sightings, line updates and city transport"
+      },
+      "registered": "2026-03-11"
+    },
+    {
+      "id": "lulu_commute",
+      "handle": "@露露赶末班车",
+      "handle_en": "@lulu_commutes",
+      "display_name": {
+        "zh-CN": "露露赶末班车",
+        "en": "Lulu Commutes"
+      },
+      "account_type": {
+        "zh-CN": "个人账号",
+        "en": "Personal account"
+      },
+      "verification": {
+        "zh-CN": "未认证",
+        "en": "Unverified"
+      },
+      "bio": {
+        "zh-CN": "上班打卡、咖啡和每天的通勤",
+        "en": "Workdays, coffee and the daily commute"
+      },
+      "registered": "2023-11-07"
+    },
+    {
+      "id": "heritage_lens",
+      "handle": "@港湾旧影",
+      "handle_en": "@harbor_archive",
+      "display_name": {
+        "zh-CN": "港湾旧影",
+        "en": "Harbor Archive"
+      },
+      "account_type": {
+        "zh-CN": "个人自媒体",
+        "en": "Independent media account"
+      },
+      "verification": {
+        "zh-CN": "无机构认证",
+        "en": "No institutional verification"
+      },
+      "bio": {
+        "zh-CN": "城市老照片、旧街区和地方故事",
+        "en": "Old city photos, neighbourhoods and local stories"
+      },
+      "registered": "2022-07-16"
+    },
+    {
+      "id": "student_aid_now",
+      "handle": "@校园补助速递",
+      "handle_en": "@student_aid_now",
+      "display_name": {
+        "zh-CN": "校园补助速递",
+        "en": "Student Aid Now"
+      },
+      "account_type": {
+        "zh-CN": "个人自媒体",
+        "en": "Independent media account"
+      },
+      "verification": {
+        "zh-CN": "无机构认证",
+        "en": "No institutional verification"
+      },
+      "bio": {
+        "zh-CN": "奖学金、兼职、学生优惠信息整理",
+        "en": "Scholarships, part-time work and student deals"
+      },
+      "registered": "2026-06-29"
+    },
+    {
+      "id": "vita_plus_store",
+      "handle": "@好眠研究所旗舰店",
+      "handle_en": "@sleepwell_store",
+      "display_name": {
+        "zh-CN": "好眠研究所旗舰店",
+        "en": "SleepWell Store"
+      },
+      "account_type": {
+        "zh-CN": "企业账号",
+        "en": "Business account"
+      },
+      "verification": {
+        "zh-CN": "企业认证",
+        "en": "Business verified"
+      },
+      "bio": {
+        "zh-CN": "睡眠用品、香氛与生活方式产品",
+        "en": "Sleep products, fragrances and lifestyle goods"
+      },
+      "registered": "2024-08-03"
+    },
+    {
+      "id": "civic_helper_center",
+      "handle": "@城市补贴服务中心",
+      "handle_en": "@city_support_center",
+      "display_name": {
+        "zh-CN": "城市补贴服务中心",
+        "en": "City Support Centre"
+      },
+      "account_type": {
+        "zh-CN": "个人自媒体",
+        "en": "Independent media account"
+      },
+      "verification": {
+        "zh-CN": "无机构认证",
+        "en": "No institutional verification"
+      },
+      "bio": {
+        "zh-CN": "整理各类补贴申请和便民通知",
+        "en": "Updates on benefits, grants and public services"
+      },
+      "registered": "2026-08-02"
+    },
+    {
+      "id": "museum_digest",
+      "handle": "@周末逛展指南",
+      "handle_en": "@weekend_museum_guide",
+      "display_name": {
+        "zh-CN": "周末逛展指南",
+        "en": "Weekend Museum Guide"
+      },
+      "account_type": {
+        "zh-CN": "个人自媒体",
+        "en": "Independent media account"
+      },
+      "verification": {
+        "zh-CN": "无机构认证",
+        "en": "No institutional verification"
+      },
+      "bio": {
+        "zh-CN": "展览推荐、抢票提醒和周末去处",
+        "en": "Exhibitions, ticket tips and weekend ideas"
+      },
+      "registered": "2024-01-27"
+    },
+    {
+      "id": "pixel_moss",
+      "handle": "@苔点像素屋",
+      "handle_en": "@pixel_moss",
+      "display_name": {
+        "zh-CN": "苔点像素屋",
+        "en": "Pixel Moss Studio"
+      },
+      "account_type": {
+        "zh-CN": "个人账号",
+        "en": "Personal account"
+      },
+      "verification": {
+        "zh-CN": "未认证",
+        "en": "Unverified"
+      },
+      "bio": {
+        "zh-CN": "概念图、像素练习和虚构城市设计",
+        "en": "Concept art, pixel studies and fictional city design"
+      },
+      "registered": "2023-03-14"
+    },
+    {
+      "id": "food_alert_corner",
+      "handle": "@街坊避雷墙",
+      "handle_en": "@neighborhood_alerts",
+      "display_name": {
+        "zh-CN": "街坊避雷墙",
+        "en": "Neighbourhood Alerts"
+      },
+      "account_type": {
+        "zh-CN": "个人自媒体",
+        "en": "Independent media account"
+      },
+      "verification": {
+        "zh-CN": "无机构认证",
+        "en": "No institutional verification"
+      },
+      "bio": {
+        "zh-CN": "网友投稿、消费吐槽、街区消息",
+        "en": "User submissions, consumer complaints and neighbourhood updates"
+      },
+      "registered": "2025-12-09"
+    },
+    {
+      "id": "greenroute_deals",
+      "handle": "@绿色出行优惠站",
+      "handle_en": "@greenroute_deals",
+      "display_name": {
+        "zh-CN": "绿色出行优惠站",
+        "en": "GreenRoute Deals"
+      },
+      "account_type": {
+        "zh-CN": "企业账号",
+        "en": "Business account"
+      },
+      "verification": {
+        "zh-CN": "企业认证",
+        "en": "Business verified"
+      },
+      "bio": {
+        "zh-CN": "通勤会员、骑行券和城市出行活动",
+        "en": "Commuter memberships, cycling vouchers and city mobility campaigns"
+      },
+      "registered": "2024-06-18"
+    }
+  ],
+  "search_results": [
+    {
+      "id": "school_closure",
+      "query": {
+        "zh-CN": "全市停课",
+        "en": "citywide school closure"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "市教育局｜7月22日汛情安排",
+            "en": "Education Bureau | July 22 flood arrangements"
+          },
+          "source": "edu.haicheng.example",
+          "snippet": {
+            "zh-CN": "海城区第二中学、实验小学明日停课，其余学校正常教学。",
+            "en": "Two named schools will close tomorrow; all others remain open."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "旧闻｜邻市去年台风期间停课",
+            "en": "Archive | Neighboring city closure last year"
+          },
+          "source": "haicheng-evening.example",
+          "snippet": {
+            "zh-CN": "邻市曾因台风安排全市停课。发布日期：2025年8月。",
+            "en": "A neighboring city ordered a citywide closure during a 2025 typhoon."
+          }
+        }
+      ]
+    },
+    {
+      "id": "reservoir_photo",
+      "query": {
+        "zh-CN": "北山水库见底",
+        "en": "Beishan Reservoir run dry"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "北山水库水位监测｜8月17日09:00",
+            "en": "Beishan Reservoir gauge | Aug 17, 09:00"
+          },
+          "source": "water.haicheng.example",
+          "snippet": {
+            "zh-CN": "监测水位接近汛限水位，设备运行正常。",
+            "en": "The monitored level is near the seasonal flood-control mark; equipment is operating normally."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "市政影像档案｜北山水库冬季检修",
+            "en": "Municipal photo archive | Beishan winter maintenance"
+          },
+          "source": "archive.haicheng.example",
+          "snippet": {
+            "zh-CN": "档案编号 BS-2022-1218：画面拍摄于2022年12月18日，记录检修期间降低水位。",
+            "en": "Archive BS-2022-1218: photographed on Dec 18, 2022, while levels were lowered for maintenance."
+          }
+        }
+      ]
+    },
+    {
+      "id": "health_drink",
+      "query": {
+        "zh-CN": "每日一瓶 含糖饮料 健康建议",
+        "en": "one bottle daily sugary drinks health advice"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "健康办调查简报｜含糖饮料摄入",
+            "en": "Health Office brief | Sugary drink intake"
+          },
+          "source": "health.haicheng.example",
+          "snippet": {
+            "zh-CN": "调查记录了青年群体的饮料消费情况。简报建议减少含糖饮料摄入，并优先选择白水。",
+            "en": "The survey records beverage consumption among young adults. Its guidance recommends fewer sugary drinks and choosing water."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "甜泡饮料｜元气每一天活动规则",
+            "en": "SweetPop | Energy Every Day campaign rules"
+          },
+          "source": "sweetpop.example",
+          "snippet": {
+            "zh-CN": "活动期间转发指定内容并提交截图，可领取饮料优惠券。",
+            "en": "During the campaign, users can repost designated content and submit a screenshot for a drink coupon."
+          }
+        }
+      ]
+    },
+    {
+      "id": "qingwan_school_closure_check",
+      "query": {
+        "zh-CN": "全区中小学明天停课",
+        "en": "all schools in Qingwan closed tomorrow"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "青湾实验小学｜8月18日教学安排",
+            "en": "Qingwan Experimental Primary School | August 18 Schedule"
+          },
+          "source": "qingwan-primary.example",
+          "snippet": {
+            "zh-CN": "受滨河道路积水影响，青湾实验小学8月18日暂停到校一天，线上作业由各班另行通知。",
+            "en": "Qingwan Experimental Primary School will suspend in-person classes on August 18 because of flooding on nearby roads."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "城北中学｜周一到校提醒",
+            "en": "Chengbei Middle School | Monday Attendance Reminder"
+          },
+          "source": "chengbei-middle.example",
+          "snippet": {
+            "zh-CN": "8月18日课程照常进行。学校提醒学生避开滨河路施工路段，从北门进入校园。",
+            "en": "Classes will run normally on August 18. Students are advised to avoid construction near Riverside Road and enter through the north gate."
+          }
+        }
+      ]
+    },
+    {
+      "id": "northlake_water_level_check",
+      "query": {
+        "zh-CN": "北湖已经快干了",
+        "en": "Northlake is almost dry"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "北湖水务站｜今日水位记录",
+            "en": "Northlake Water Station | Today's Level"
+          },
+          "source": "northlake-water.example",
+          "snippet": {
+            "zh-CN": "8月17日08:00记录水位为48.6米，处于本月常见波动区间，东岸观测点正常。",
+            "en": "At 08:00 on August 17, the recorded level was 48.6 metres, within the usual range for the month. The east-bank monitoring point was operating normally."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "市政影像档案｜北湖冬季清淤工程",
+            "en": "Municipal Photo Archive | Northlake Winter Dredging"
+          },
+          "source": "civic-archive.example",
+          "snippet": {
+            "zh-CN": "2023年12月清淤期间，北湖南侧曾短时排水，工程影像记录了大面积裸露湖床。",
+            "en": "During dredging in December 2023, water was temporarily drained from the southern section of Northlake, exposing large areas of the lakebed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "nangang_station_delay_check",
+      "query": {
+        "zh-CN": "南港站停了二十多分钟",
+        "en": "Nangang Station stopped for over twenty minutes"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "海桥轨道｜8月18日晚间运行记录",
+            "en": "Haiqiao Metro | August 18 Evening Service Log"
+          },
+          "source": "haiqiao-metro.example",
+          "snippet": {
+            "zh-CN": "21:11至21:34，2号线南港站因信号设备异常采取临时限流，部分列车延长停站时间。",
+            "en": "From 21:11 to 21:34, Nangang Station on Line 2 used temporary crowd controls because of a signalling fault, and some trains remained at the platform longer than usual."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "南港站值班记录｜8月18日",
+            "en": "Nangang Station Duty Log | August 18"
+          },
+          "source": "station-log.example",
+          "snippet": {
+            "zh-CN": "21:16后站台客流增加，工作人员分批放行乘客；21:36起进站秩序恢复正常。",
+            "en": "Platform crowds increased after 21:16 and passengers were admitted in groups. Normal entry resumed from 21:36."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mistlake_2021_archive_check",
+      "query": {
+        "zh-CN": "2021年旧照片 雾杉湖",
+        "en": "2021 archive photo Mistpine Lake"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "雾杉湖管理处｜2021年秋季水位记录",
+            "en": "Mistpine Lake Authority | Autumn 2021 Water Levels"
+          },
+          "source": "mistlake-authority.example",
+          "snippet": {
+            "zh-CN": "2021年10月下旬进入季节性低水位期，西侧浅滩大面积露出，11月降雨后水位逐步回升。",
+            "en": "In late October 2021, seasonal low water exposed large parts of the western shallows. Levels gradually recovered after rainfall in November."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "地方影像馆｜雾杉湖西岸照片入藏记录",
+            "en": "Local Image Archive | Mistpine Lake West Bank Collection"
+          },
+          "source": "local-images.example",
+          "snippet": {
+            "zh-CN": "编号ML-2021-104的照片拍摄于2021年10月27日，画面位置为雾杉湖西岸木栈道附近。",
+            "en": "Photo ML-2021-104 was taken on October 27, 2021 near the wooden walkway on the west bank of Mistpine Lake."
+          }
+        }
+      ]
+    },
+    {
+      "id": "digital_reading_recommendation_check",
+      "query": {
+        "zh-CN": "官方最推荐的阅读方式",
+        "en": "the reading method officials recommend most"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "云桥文化中心｜2026青年阅读习惯调查",
+            "en": "Yunqiao Cultural Centre | 2026 Youth Reading Habits Survey"
+          },
+          "source": "yunqiao-culture.example",
+          "snippet": {
+            "zh-CN": "调查记录了纸质书、电子书和有声书的使用比例。18至24岁受访者中，电子阅读使用频率较上一年度有所上升。",
+            "en": "The survey records use of print books, e-books and audiobooks. Among respondents aged 18–24, the frequency of digital reading increased compared with the previous year."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "悦读会员季｜暑期推广合作说明",
+            "en": "ReadMore Membership | Summer Campaign Partnership Notes"
+          },
+          "source": "readmore-campaign.example",
+          "snippet": {
+            "zh-CN": "本次活动购买年度会员可获得两个月延长服务。宣传素材可引用公开阅读调查数据，合作推广按新增订阅数量结算。",
+            "en": "Annual subscriptions purchased during the campaign include two extra months. Promotional materials may cite public reading survey data, and partners are paid based on new subscriptions."
+          }
+        }
+      ]
+    },
+    {
+      "id": "rivergate_library_hours",
+      "query": {
+        "zh-CN": "河门图书馆暂停开放一周",
+        "en": "Rivergate Library closed for a week"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "河门市图书馆｜8月19日设备维护安排",
+            "en": "Rivergate City Library | August 19 Maintenance Schedule"
+          },
+          "source": "rivergate-library.example",
+          "snippet": {
+            "zh-CN": "8月19日上午9:00至12:00进行供电设备维护，其间主楼暂停入馆。少儿馆和线上借阅服务正常运行。",
+            "en": "The main building will pause entry from 9:00 to 12:00 on August 19 for electrical maintenance. The children's branch and online services remain available."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "河门文化服务中心｜本周公共场馆开放表",
+            "en": "Rivergate Cultural Services | Public Venue Hours This Week"
+          },
+          "source": "rivergate-culture.example",
+          "snippet": {
+            "zh-CN": "市图书馆8月19日下午13:00恢复开放，20日至23日执行正常开放时间。",
+            "en": "The city library reopens at 13:00 on August 19 and follows normal opening hours from August 20 through 23."
+          }
+        }
+      ]
+    },
+    {
+      "id": "metro_flooding_aug",
+      "query": {
+        "zh-CN": "东环线隧道已经进水",
+        "en": "East Loop tunnel is flooded"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "东环轨道｜8月19日线路运行信息",
+            "en": "East Loop Transit | August 19 Service Status"
+          },
+          "source": "eastloop-transit.example",
+          "snippet": {
+            "zh-CN": "截至18:30，东环线全线按计划运行。青石站3号出入口因地面积水临时关闭，其余出入口开放。",
+            "en": "As of 18:30, the East Loop Line is operating to schedule. Exit 3 at Qingshi Station is temporarily closed because of surface water; other exits remain open."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "城市排水中心｜青石路晚间积水处置记录",
+            "en": "City Drainage Centre | Qingshi Road Evening Response Log"
+          },
+          "source": "drainage-log.example",
+          "snippet": {
+            "zh-CN": "17:52接报青石路低洼路段积水，18:41完成排水。记录地点位于车站地面出口南侧。",
+            "en": "Surface flooding was reported on a low section of Qingshi Road at 17:52 and cleared by 18:41. The logged location was south of the station's street-level exit."
+          }
+        }
+      ]
+    },
+    {
+      "id": "copperline_delay",
+      "query": {
+        "zh-CN": "铜河线昨晚临时停了十几分钟",
+        "en": "Copper River Line stopped for over ten minutes last night"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "铜河轨道｜8月20日运行日志",
+            "en": "Copper River Transit | August 20 Service Log"
+          },
+          "source": "copperline-transit.example",
+          "snippet": {
+            "zh-CN": "20:43至20:58，铜河线东段因车门状态异常调整行车间隔，三列列车延长停站时间。",
+            "en": "From 20:43 to 20:58, service intervals on the eastern section were adjusted because of a door-status fault, and three trains remained at stations longer than scheduled."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "枫桥站值班记录｜8月20日晚间",
+            "en": "Fengqiao Station Duty Log | Evening of August 20"
+          },
+          "source": "fengqiao-station.example",
+          "snippet": {
+            "zh-CN": "20:47起2号站台候车人数增加，21:02恢复正常发车间隔。",
+            "en": "Passenger numbers on Platform 2 increased from 20:47. Normal departure intervals resumed at 21:02."
+          }
+        }
+      ]
+    },
+    {
+      "id": "oldpier_archive",
+      "query": {
+        "zh-CN": "2019年老码头改造前",
+        "en": "Old Pier before renovation in 2019"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "港湾城市档案馆｜旧码头2019年影像目录",
+            "en": "Harbor City Archive | Old Pier 2019 Image Catalogue"
+          },
+          "source": "harbor-archive.example",
+          "snippet": {
+            "zh-CN": "影像编号HP-1906-42拍摄于2019年6月，记录旧码头仓库拆除前的东侧入口。",
+            "en": "Image HP-1906-42 was taken in June 2019 and shows the east entrance of the Old Pier before warehouse demolition."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "港湾建设局｜旧码头更新工程时间线",
+            "en": "Harbor Development Bureau | Old Pier Renewal Timeline"
+          },
+          "source": "harbor-build.example",
+          "snippet": {
+            "zh-CN": "旧码头改造工程于2020年3月启动，2022年完成公共步道和商业空间一期建设。",
+            "en": "Renovation of the Old Pier began in March 2020, with the first phase of public walkways and commercial space completed in 2022."
+          }
+        }
+      ]
+    },
+    {
+      "id": "brightstar_grant_check",
+      "query": {
+        "zh-CN": "星桥青年补助每人3000元",
+        "en": "Starbridge Youth Grant 3000 yuan"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "星桥学院学生事务处｜2026年度助学项目",
+            "en": "Starbridge College Student Affairs | 2026 Financial Aid Programmes"
+          },
+          "source": "starbridge-student.example",
+          "snippet": {
+            "zh-CN": "本年度校内助学项目均通过学生事务系统提交申请，不收取报名费。申请开放期为9月2日至9月20日。",
+            "en": "All college financial-aid applications are submitted through the Student Affairs portal and do not require an application fee. Applications open from September 2 to September 20."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "星桥校园网络中心｜奖学金与补助诈骗提醒",
+            "en": "Starbridge Campus Cyber Centre | Scholarship and Grant Scam Advisory"
+          },
+          "source": "starbridge-cyber.example",
+          "snippet": {
+            "zh-CN": "近期诈骗信息常以限时补助为名，要求扫描外部二维码、上传身份证件或先支付小额认证费用。",
+            "en": "Recent scams have advertised limited-time grants while asking users to scan external QR codes, upload identity documents or pay small verification fees."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sleep_survey_context",
+      "query": {
+        "zh-CN": "八成大学生睡不好",
+        "en": "eight in ten university students sleep badly"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "青岚青年研究中心｜2026大学生作息调查",
+            "en": "Qinglan Youth Research Centre | 2026 Student Sleep Survey"
+          },
+          "source": "qinglan-research.example",
+          "snippet": {
+            "zh-CN": "调查中42%的受访学生表示过去一个月曾多次睡眠不足，19%表示经常入睡困难。报告建议关注作息、压力和睡眠环境等多种因素。",
+            "en": "In the survey, 42% of respondents reported repeated sleep deprivation during the previous month, while 19% often had difficulty falling asleep. The report discusses schedules, stress and sleep environment among several factors."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "好眠研究所｜秋季校园推广合作说明",
+            "en": "SleepWell | Autumn Campus Promotion Brief"
+          },
+          "source": "sleepwell-campaign.example",
+          "snippet": {
+            "zh-CN": "推广活动主推助眠香氛套装，合作账号按优惠码带来的订单数量结算佣金。",
+            "en": "The campaign promotes a sleep-fragrance bundle, with partner accounts paid commissions based on orders attributed to discount codes."
+          }
+        }
+      ]
+    },
+    {
+      "id": "rent_support_check",
+      "query": {
+        "zh-CN": "秋季租房补贴开放加急通道",
+        "en": "autumn rent support priority channel"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "栖湖住房服务局｜2026秋季租住支持计划",
+            "en": "Qihu Housing Services | 2026 Autumn Rent Support Programme"
+          },
+          "source": "qihu-housing.example",
+          "snippet": {
+            "zh-CN": "申请于9月1日开放，仅通过住房服务平台受理。审核不收取加急费，申请人无需通过即时通讯软件提交银行卡信息。",
+            "en": "Applications open on September 1 and are accepted only through the housing-services portal. There is no priority-processing fee, and applicants are not asked to submit bank details through messaging apps."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "栖湖数字安全中心｜近期公共补贴仿冒页面提示",
+            "en": "Qihu Digital Safety Centre | Public-Benefit Impersonation Advisory"
+          },
+          "source": "qihu-cyber.example",
+          "snippet": {
+            "zh-CN": "近期仿冒页面常使用生成式图像制作机构徽标和通知截图，并通过二维码跳转到非政府域名表单。",
+            "en": "Recent impersonation pages have used generated images to imitate agency logos and notices, with QR codes leading to forms hosted outside government domains."
+          }
+        }
+      ]
+    },
+    {
+      "id": "museum_attendance_context",
+      "query": {
+        "zh-CN": "周末门票基本当天买不到",
+        "en": "weekend museum tickets are basically unavailable same-day"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "白塔博物馆｜夏季参观数据简报",
+            "en": "White Tower Museum | Summer Visitor Statistics"
+          },
+          "source": "whitetower-museum.example",
+          "snippet": {
+            "zh-CN": "7月周末平均入馆人数较工作日高31%。多数周六上午预约较快满额，周日下午和晚间场次仍有现场及当日预约名额。",
+            "en": "Weekend attendance in July averaged 31% above weekdays. Saturday morning reservations filled more quickly, while Sunday afternoon and evening sessions still had same-day availability."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "快票城市｜白塔博物馆代订服务说明",
+            "en": "QuickTicket City | White Tower Museum Booking Service"
+          },
+          "source": "quickticket.example",
+          "snippet": {
+            "zh-CN": "平台提供付费提醒和代填预约服务，服务费不包含博物馆门票费用。推广账号可按成交订单获得分成。",
+            "en": "The platform offers paid reminders and booking assistance. Its service fee is separate from museum admission, and promotional accounts may receive commission on completed orders."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ai_concept_art_check",
+      "query": {
+        "zh-CN": "不存在的未来车站",
+        "en": "fictional future station"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "苔点像素屋作品页｜未来交通概念练习",
+            "en": "Pixel Moss Portfolio | Future Transit Concept Study"
+          },
+          "source": "pixelmoss-portfolio.example",
+          "snippet": {
+            "zh-CN": "“云灯站”系列为个人概念设计练习，以生成式图像作为早期构图参考，再进行像素重绘。项目说明标注为虚构场景。",
+            "en": "The Cloudlamp Station series is a personal concept-design exercise. Generative imagery was used during early composition studies before pixel redrawing, and the project is labelled fictional."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "云州市轨道规划｜现有及规划线路名单",
+            "en": "Yunzhou Transit Planning | Existing and Planned Stations"
+          },
+          "source": "yunzhou-transit.example",
+          "snippet": {
+            "zh-CN": "截至2026年8月，已公布线路及规划站点中没有“云灯站”这一名称。",
+            "en": "As of August 2026, no station named Cloudlamp appears in the published list of operating or planned transit stations."
+          }
+        }
+      ]
+    },
+    {
+      "id": "maple_street_inspection",
+      "query": {
+        "zh-CN": "枫叶巷餐厅后厨都是虫",
+        "en": "Maple Lane restaurant kitchen covered in insects"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "松桥食品检查处｜枫叶巷餐饮检查记录",
+            "en": "Songqiao Food Inspection Office | Maple Lane Inspection Record"
+          },
+          "source": "songqiao-food.example",
+          "snippet": {
+            "zh-CN": "8月15日对枫叶巷12号餐饮单位进行例行检查，记录两项储物标签问题，未记录虫害处置项目。复查日期为9月5日。",
+            "en": "A routine inspection on August 15 at the restaurant on 12 Maple Lane recorded two storage-labelling issues. No pest-control violation was recorded. A follow-up is scheduled for September 5."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "枫叶巷物业｜8月虫害防治服务记录",
+            "en": "Maple Lane Property Services | August Pest-Control Log"
+          },
+          "source": "maplelane-property.example",
+          "snippet": {
+            "zh-CN": "8月例行虫害防治于12日完成，覆盖一层餐饮区公共走廊、垃圾房和下水设施。",
+            "en": "Routine pest-control treatment was completed on August 12 for the ground-floor food-service corridor, waste room and drainage areas."
+          }
+        }
+      ]
+    },
+    {
+      "id": "commute_report_context",
+      "query": {
+        "zh-CN": "骑共享单车的人通勤效率最高",
+        "en": "bike-share users have the most efficient commute"
+      },
+      "results": [
+        {
+          "title": {
+            "zh-CN": "新川交通研究院｜2026短距离通勤调查",
+            "en": "Xinchuan Transport Institute | 2026 Short-Distance Commute Survey"
+          },
+          "source": "xinchuan-mobility.example",
+          "snippet": {
+            "zh-CN": "在3公里以内的样本中，自行车与步行的平均耗时较稳定；公交和驾车时间受道路拥堵影响更明显。报告未对各种方式进行综合效率排名。",
+            "en": "For trips under three kilometres, cycling and walking showed relatively stable travel times, while bus and car journeys varied more with congestion. The report does not provide an overall efficiency ranking."
+          }
+        },
+        {
+          "title": {
+            "zh-CN": "绿色出行优惠站｜新会员拉新计划",
+            "en": "GreenRoute Deals | New Member Acquisition Campaign"
+          },
+          "source": "greenroute-campaign.example",
+          "snippet": {
+            "zh-CN": "活动向首次购买月卡的用户提供折扣。合作内容创作者按新会员注册数量获得推广奖励。",
+            "en": "The campaign offers discounts to first-time monthly-pass buyers. Partner creators receive rewards based on new member registrations."
+          }
+        }
+      ]
+    }
+  ],
+  "media_metadata": [
+    {
+      "id": "reservoir_2022",
+      "kind": "image",
+      "file_name": "beishan_low_water.jpg",
+      "dimensions": "1600×900",
+      "created_at": "2022-12-18 09:42",
+      "source": {
+        "zh-CN": "市政检修影像库",
+        "en": "Municipal maintenance archive"
+      },
+      "ai_trace": 0
+    },
+    {
+      "id": "northlake_dredging_2023",
+      "kind": "image",
+      "file_name": "northlake-south-bank.jpg",
+      "dimensions": "1600×900",
+      "created_at": "2023-12-11 15:26",
+      "source": {
+        "zh-CN": "市政工程影像档案",
+        "en": "Municipal Works Photo Archive"
+      },
+      "ai_trace": 0
+    },
+    {
+      "id": "mistlake_archive_2021",
+      "kind": "image",
+      "file_name": "mistlake-west-2021.jpg",
+      "dimensions": "2048×1365",
+      "created_at": "2021-10-27 16:18",
+      "source": {
+        "zh-CN": "地方影像馆馆藏",
+        "en": "Local Image Archive collection"
+      },
+      "ai_trace": 0
+    },
+    {
+      "id": "metro_tunnel_ai_aug",
+      "kind": "image",
+      "file_name": "eastloop-tunnel-water.png",
+      "dimensions": "1536×1024",
+      "created_at": "2026-08-19 18:14",
+      "source": {
+        "zh-CN": "社交平台上传文件",
+        "en": "Social media upload"
+      },
+      "ai_trace": 2
+    },
+    {
+      "id": "oldpier_2019",
+      "kind": "image",
+      "file_name": "old-pier-east-2019.jpg",
+      "dimensions": "1920×1280",
+      "created_at": "2019-06-13 10:18",
+      "source": {
+        "zh-CN": "港湾城市档案馆",
+        "en": "Harbor City Archive"
+      },
+      "ai_trace": 0
+    },
+    {
+      "id": "brightstar_grant_poster",
+      "kind": "image",
+      "file_name": "starbridge-grant-3000.png",
+      "dimensions": "1200×1600",
+      "created_at": "2026-08-20 07:41",
+      "source": {
+        "zh-CN": "社交平台上传文件",
+        "en": "Social media upload"
+      },
+      "ai_trace": 1
+    },
+    {
+      "id": "rent_support_ai_notice",
+      "kind": "image",
+      "file_name": "qihu-rent-priority-channel.png",
+      "dimensions": "1280×1706",
+      "created_at": "2026-08-21 09:03",
+      "source": {
+        "zh-CN": "社交平台上传文件",
+        "en": "Social media upload"
+      },
+      "ai_trace": 2
+    },
+    {
+      "id": "pixel_moss_concept",
+      "kind": "image",
+      "file_name": "cloudlamp-station-concept.png",
+      "dimensions": "1536×1024",
+      "created_at": "2026-08-21 14:22",
+      "source": {
+        "zh-CN": "苔点像素屋概念图",
+        "en": "Pixel Moss concept artwork"
+      },
+      "ai_trace": 1
+    },
+    {
+      "id": "maple_restaurant_ai_photo",
+      "kind": "image",
+      "file_name": "maple-kitchen-insects.jpg",
+      "dimensions": "1408×1024",
+      "created_at": "2026-08-21 20:13",
+      "source": {
+        "zh-CN": "匿名投稿图片",
+        "en": "Anonymous submitted image"
+      },
+      "ai_trace": 2
+    }
+  ],
+  "cases": [
+    {
+      "id": "d1_school_closure",
+      "day": 1,
+      "tutorial_step": "profile_search",
+      "tutorial_retry": true,
+      "mentor_reacts": true,
+      "title": {
+        "zh-CN": "明天全市停课？",
+        "en": "Citywide closure tomorrow?"
+      },
+      "brief": {
+        "zh-CN": "先看看谁发的，再查查正文里的说法。",
+        "en": "Check who posted it, then look up the claim."
+      },
+      "post": {
+        "account_id": "city_fresh",
+        "time": "18:40",
+        "body": {
+          "zh-CN": "【紧急】市教育局通知：明天全市停课。所有学校都要执行，请立即转发给家长！",
+          "en": "[URGENT] The education bureau says every school will close tomorrow. Share this with parents now!"
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "全市停课",
+              "en": "every school will close tomorrow"
+            },
+            "result_set_id": "school_closure"
+          }
+        ],
+        "media_id": "",
+        "metrics": {
+          "shares": 12804,
+          "comments": 356
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information"
+      ],
+      "accepted_decisions": [
+        "lock"
+      ],
+      "feedback": {
+        "pass": {
+          "zh-CN": "不对吧？你仔细看了没，刚才检索说只有两所学校停课。倒是有个全市停课的——但是那是去年的。等你自己独立审核的时候仔细点，就没有我帮你校对了。",
+          "en": "Hang on. Did you read those results carefully? Only two schools are closing. There was a citywide closure, sure—but that was last year. Be more careful when you're on your own. I won't always be here to check your work."
+        },
+        "lock": {
+          "zh-CN": "嗯，对。通知里只有两所学校停课，另一个“全市停课”还是去年的旧闻。看到这种催着人转发的帖子，先别被它带着跑。",
+          "en": "Yeah, that's it. The notice names only two schools, and that other citywide closure is old news from last year. When a post pushes you to share right away, don't let it set your pace."
+        }
+      }
+    },
+    {
+      "id": "d1_reservoir",
+      "day": 1,
+      "tutorial_step": "media",
+      "tutorial_retry": true,
+      "mentor_reacts": true,
+      "title": {
+        "zh-CN": "水库已经见底？",
+        "en": "Has the reservoir run dry?"
+      },
+      "brief": {
+        "zh-CN": "这条帖子带了一张照片。",
+        "en": "This post includes a photo."
+      },
+      "post": {
+        "account_id": "harbor_eye",
+        "time": "19:12",
+        "body": {
+          "zh-CN": "北山水库已经见底，今年肯定要限水了。照片就是今天拍的。",
+          "en": "Beishan Reservoir has run dry. Water rationing is certain. This photo was taken today."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "北山水库已经见底",
+              "en": "Beishan Reservoir has run dry"
+            },
+            "result_set_id": "reservoir_photo"
+          }
+        ],
+        "media_id": "reservoir_2022",
+        "metrics": {
+          "shares": 2301,
+          "comments": 94
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information"
+      ],
+      "accepted_decisions": [
+        "lock"
+      ],
+      "feedback": {
+        "pass": {
+          "zh-CN": "等等，你再看一眼检测器。照片是2022年检修时拍的，帖子却说是今天。旧照片这样拿出来用，很容易把人吓住。",
+          "en": "Wait—look at the inspector again. The photo was taken during maintenance in 2022, but the post says it was taken today. Reusing an old image like this can scare people fast."
+        },
+        "lock": {
+          "zh-CN": "嗯。不错，很仔细。检测器上发现它是好久之前拍的了，但是这个帖子却说是今天拍的。明显是想引起慌乱。",
+          "en": "Mm. Good—you were paying attention. The inspector shows the photo was taken years ago, but the post calls it today's picture. That's clearly meant to stir up panic."
+        }
+      }
+    },
+    {
+      "id": "d1_qingwan_all_schools_closed",
+      "day": 1,
+      "title": {
+        "zh-CN": "明天都不用上课？",
+        "en": "No School Tomorrow?"
+      },
+      "brief": {
+        "zh-CN": "这条帖子包含一项需要核验的说法。",
+        "en": "This post contains a claim to check."
+      },
+      "post": {
+        "account_id": "qingwan_daily",
+        "time": "18:47",
+        "body": {
+          "zh-CN": "刚收到消息，青湾区因为积水，明天全区中小学明天停课。家里有学生的记得提前安排，看到的互相转一下。",
+          "en": "Just heard that because of flooding, all schools in Qingwan are closed tomorrow. If you have kids in school, make plans early and pass this around."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "全区中小学明天停课",
+              "en": "all schools in Qingwan are closed tomorrow"
+            },
+            "result_set_id": "qingwan_school_closure_check"
+          }
+        ],
+        "media_id": "",
+        "metrics": {
+          "shares": 1842,
+          "comments": 137
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information"
+      ],
+      "accepted_decisions": [
+        "lock"
+      ]
+    },
+    {
+      "id": "d1_northlake_dry_photo",
+      "day": 1,
+      "title": {
+        "zh-CN": "湖快干了？",
+        "en": "Is the Lake Drying Up?"
+      },
+      "brief": {
+        "zh-CN": "这条帖子附带了一张图片。",
+        "en": "This post includes an image."
+      },
+      "post": {
+        "account_id": "northlake_snapshot",
+        "time": "20:06",
+        "body": {
+          "zh-CN": "今晚路过拍的，北湖已经快干了，湖底都露出来这么多。照这个样子下去，过几天估计更夸张。",
+          "en": "Took this while passing by tonight. Northlake is almost dry and so much of the lakebed is already exposed. At this rate it'll look even worse in a few days."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "北湖已经快干了",
+              "en": "Northlake is almost dry"
+            },
+            "result_set_id": "northlake_water_level_check"
+          }
+        ],
+        "media_id": "northlake_dredging_2023",
+        "metrics": {
+          "shares": 964,
+          "comments": 82
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information"
+      ],
+      "accepted_decisions": [
+        "lock"
+      ]
+    },
+    {
+      "id": "d1_rivergate_library_week",
+      "day": 1,
+      "title": {
+        "zh-CN": "图书馆要关一周？",
+        "en": "Library Closed for a Week?"
+      },
+      "brief": {
+        "zh-CN": "这条帖子转述了一项公共场馆安排。",
+        "en": "This post describes a public venue schedule."
+      },
+      "post": {
+        "account_id": "rivergate_notice",
+        "time": "17:26",
+        "body": {
+          "zh-CN": "提醒一下，河门图书馆暂停开放一周，这几天想去自习的别白跑了，我也是刚在群里看到。",
+          "en": "Heads-up: Rivergate Library is closed for a week, so don't make a wasted trip if you planned to study there. I just saw this in a group chat."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "河门图书馆暂停开放一周",
+              "en": "Rivergate Library is closed for a week"
+            },
+            "result_set_id": "rivergate_library_hours"
+          }
+        ],
+        "media_id": "",
+        "metrics": {
+          "shares": 692,
+          "comments": 48
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information"
+      ],
+      "accepted_decisions": [
+        "lock"
+      ]
+    },
+    {
+      "id": "d1_eastloop_ai_flood",
+      "day": 1,
+      "title": {
+        "zh-CN": "隧道进水图",
+        "en": "Flooded Tunnel Image"
+      },
+      "brief": {
+        "zh-CN": "这条帖子附带了一张地铁相关图片。",
+        "en": "This post includes an image related to the metro."
+      },
+      "post": {
+        "account_id": "metro_watch_ai",
+        "time": "18:36",
+        "body": {
+          "zh-CN": "刚有人发来的图，东环线隧道已经进水，看着水都快漫过轨道了。晚上回家的最好换条线。",
+          "en": "Someone just sent me this picture. The East Loop tunnel is flooded and the water looks close to covering the tracks. Better take another line tonight."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "东环线隧道已经进水",
+              "en": "The East Loop tunnel is flooded"
+            },
+            "result_set_id": "metro_flooding_aug"
+          }
+        ],
+        "media_id": "metro_tunnel_ai_aug",
+        "metrics": {
+          "shares": 3218,
+          "comments": 241
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information"
+      ],
+      "accepted_decisions": [
+        "lock"
+      ]
+    },
+    {
+      "id": "d2_nangang_commute_delay",
+      "day": 2,
+      "title": {
+        "zh-CN": "昨晚的通勤吐槽",
+        "en": "Last Night's Commute"
+      },
+      "brief": {
+        "zh-CN": "这是一名普通用户发布的个人经历。",
+        "en": "This is a personal account of an everyday experience."
+      },
+      "post": {
+        "account_id": "miaoyu_commute",
+        "time": "08:12",
+        "body": {
+          "zh-CN": "昨晚下班真的累死，在南港站停了二十多分钟才继续走，站台上人越堆越多。我到家都快十点半了。",
+          "en": "Last night after work was exhausting. Nangang Station stopped for over twenty minutes before things moved again, and the platform kept getting more crowded. I didn't get home until almost 10:30."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "南港站停了二十多分钟",
+              "en": "Nangang Station stopped for over twenty minutes"
+            },
+            "result_set_id": "nangang_station_delay_check"
+          }
+        ],
+        "media_id": "",
+        "metrics": {
+          "shares": 34,
+          "comments": 19
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information"
+      ],
+      "accepted_decisions": [
+        "pass"
+      ]
+    },
+    {
+      "id": "d2_mistlake_archive_photo",
+      "day": 2,
+      "title": {
+        "zh-CN": "一张旧湖景",
+        "en": "An Old Lake Photo"
+      },
+      "brief": {
+        "zh-CN": "这条帖子分享了一张带有时间说明的旧照片。",
+        "en": "This post shares an older image with a date."
+      },
+      "post": {
+        "account_id": "oldtown_album",
+        "time": "14:35",
+        "body": {
+          "zh-CN": "翻到一张2021年旧照片，雾杉湖那年秋天水位特别低，西边的浅滩全露出来了。现在看还挺有年代感。",
+          "en": "Found a 2021 archive photo. Mistpine Lake was unusually low that autumn and the western shallows were exposed. It already feels like a little time capsule."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "2021年旧照片",
+              "en": "2021 archive photo"
+            },
+            "result_set_id": "mistlake_2021_archive_check"
+          }
+        ],
+        "media_id": "mistlake_archive_2021",
+        "metrics": {
+          "shares": 76,
+          "comments": 31
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information"
+      ],
+      "accepted_decisions": [
+        "pass"
+      ]
+    },
+    {
+      "id": "d2_copperline_commute",
+      "day": 2,
+      "title": {
+        "zh-CN": "昨天那班地铁",
+        "en": "Last Night's Train"
+      },
+      "brief": {
+        "zh-CN": "这是一名普通用户记录的通勤经历。",
+        "en": "This is an ordinary user's account of a commute."
+      },
+      "post": {
+        "account_id": "lulu_commute",
+        "time": "08:05",
+        "body": {
+          "zh-CN": "昨天晚上坐铜河线真的困死，车在枫桥那边临时停了十几分钟，后来站台也挤起来了。我还以为赶不上末班接驳车。",
+          "en": "Last night on the Copper River Line was exhausting. We stopped around Fengqiao for over ten minutes, and the platform got crowded after that. I thought I'd miss my last connecting bus."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "临时停了十几分钟",
+              "en": "stopped around Fengqiao for over ten minutes"
+            },
+            "result_set_id": "copperline_delay"
+          }
+        ],
+        "media_id": "",
+        "metrics": {
+          "shares": 17,
+          "comments": 12
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information"
+      ],
+      "accepted_decisions": [
+        "pass"
+      ]
+    },
+    {
+      "id": "d2_oldpier_archive_post",
+      "day": 2,
+      "title": {
+        "zh-CN": "改造前的老码头",
+        "en": "The Old Pier Before Renovation"
+      },
+      "brief": {
+        "zh-CN": "这条帖子分享了一张历史照片。",
+        "en": "This post shares a historical photograph."
+      },
+      "post": {
+        "account_id": "heritage_lens",
+        "time": "13:44",
+        "body": {
+          "zh-CN": "翻相册翻到2019年老码头改造前的照片，那时候东门还是这副样子。现在再从这里走过去，完全认不出来了。",
+          "en": "Found this photo of the Old Pier before renovation in 2019. The east entrance looked completely different back then. Walking through it now, you'd barely recognise the place."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "2019年老码头改造前",
+              "en": "Old Pier before renovation in 2019"
+            },
+            "result_set_id": "oldpier_archive"
+          }
+        ],
+        "media_id": "oldpier_2019",
+        "metrics": {
+          "shares": 92,
+          "comments": 36
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information"
+      ],
+      "accepted_decisions": [
+        "pass"
+      ]
+    },
+    {
+      "id": "d2_starbridge_grant_scam",
+      "day": 2,
+      "title": {
+        "zh-CN": "学生补助海报",
+        "en": "Student Grant Poster"
+      },
+      "brief": {
+        "zh-CN": "这条帖子附带了一张补助申请海报。",
+        "en": "This post includes a poster about a student grant."
+      },
+      "post": {
+        "account_id": "student_aid_now",
+        "time": "09:17",
+        "body": {
+          "zh-CN": "星桥的同学快看，星桥青年补助每人3000元，今天最后一天。扫图里的码填身份证，再交6块认证费就能登记，别错过。",
+          "en": "Starbridge students, check this out: the Starbridge Youth Grant gives everyone ¥3,000 and today is the last day. Scan the code, enter your ID details and pay a ¥6 verification fee to register."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "星桥青年补助每人3000元",
+              "en": "the Starbridge Youth Grant gives everyone ¥3,000"
+            },
+            "result_set_id": "brightstar_grant_check"
+          }
+        ],
+        "media_id": "brightstar_grant_poster",
+        "metrics": {
+          "shares": 5088,
+          "comments": 327
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information"
+      ],
+      "accepted_decisions": [
+        "lock"
+      ]
+    },
+    {
+      "id": "d3_health_campaign",
+      "day": 3,
+      "title": {
+        "zh-CN": "官方数据，品牌转发",
+        "en": "Official data, brand framing"
+      },
+      "brief": {
+        "zh-CN": "数字来自官方，但这条转发还做了别的事。",
+        "en": "The statistic is official, but the repost does something else with it."
+      },
+      "post": {
+        "account_id": "health_office",
+        "time": "11:20",
+        "body": {
+          "zh-CN": "调查显示，年轻人需要及时补充能量。每日一瓶，保持元气！转发可领甜泡饮料优惠券。",
+          "en": "A survey shows young people need energy. One bottle a day keeps you going! Repost for a SweetPop coupon."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "每日一瓶",
+              "en": "One bottle a day"
+            },
+            "result_set_id": "health_drink"
+          }
+        ],
+        "media_id": "",
+        "metrics": {
+          "shares": 8410,
+          "comments": 612
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information",
+        "current_purpose"
+      ],
+      "accepted_decisions": [
+        "lock"
+      ]
+    },
+    {
+      "id": "d3_readmore_official_recommendation",
+      "day": 3,
+      "title": {
+        "zh-CN": "调查数据变成推荐？",
+        "en": "From Survey to Recommendation?"
+      },
+      "brief": {
+        "zh-CN": "这条企业账号帖子引用了一项公开调查。",
+        "en": "This business account cites a public survey."
+      },
+      "post": {
+        "account_id": "readmore_club",
+        "time": "12:20",
+        "body": {
+          "zh-CN": "最新青年阅读调查已经说明了：电子阅读就是官方最推荐的阅读方式。现在开悦读年度会员送两个月，今天转发还能再领15元券。",
+          "en": "The latest youth reading survey makes it clear: digital reading is the reading method officials recommend most. Get a ReadMore annual membership now for two extra months, and share today for another ¥15 coupon."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "官方最推荐的阅读方式",
+              "en": "the reading method officials recommend most"
+            },
+            "result_set_id": "digital_reading_recommendation_check"
+          }
+        ],
+        "media_id": "",
+        "metrics": {
+          "shares": 4275,
+          "comments": 208
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information",
+        "current_purpose"
+      ],
+      "accepted_decisions": [
+        "lock"
+      ]
+    },
+    {
+      "id": "d3_sleepwell_survey_ad",
+      "day": 3,
+      "title": {
+        "zh-CN": "调查数据和助眠套装",
+        "en": "Sleep Survey and Product Bundle"
+      },
+      "brief": {
+        "zh-CN": "这条企业账号帖子引用了一项青年调查。",
+        "en": "This business post cites a youth survey."
+      },
+      "post": {
+        "account_id": "vita_plus_store",
+        "time": "11:32",
+        "body": {
+          "zh-CN": "最新调查说八成大学生睡不好，别再硬扛啦。今晚开始用我们的晚安香氛套装，输入SLEEP20还有折扣。",
+          "en": "The latest survey says eight in ten university students sleep badly. Stop pushing through it. Start using our SleepWell night fragrance set tonight and use code SLEEP20 for a discount."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "八成大学生睡不好",
+              "en": "eight in ten university students sleep badly"
+            },
+            "result_set_id": "sleep_survey_context"
+          }
+        ],
+        "media_id": "",
+        "metrics": {
+          "shares": 2310,
+          "comments": 164
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information",
+        "current_purpose"
+      ],
+      "accepted_decisions": [
+        "lock"
+      ]
+    },
+    {
+      "id": "d3_qihu_rent_support_scam",
+      "day": 3,
+      "title": {
+        "zh-CN": "租房补贴加急通道",
+        "en": "Priority Rent Support"
+      },
+      "brief": {
+        "zh-CN": "这条帖子分享了一项补贴申请信息。",
+        "en": "This post shares information about a benefit application."
+      },
+      "post": {
+        "account_id": "civic_helper_center",
+        "time": "09:28",
+        "body": {
+          "zh-CN": "租房的注意，秋季租房补贴开放加急通道了。今天扫海报码，把银行卡和身份证信息填好，再交12元加急费，最快今晚到账。",
+          "en": "Renters, the autumn rent support priority channel is open. Scan the code today, enter your bank and ID details, then pay a ¥12 priority fee for payment as soon as tonight."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "秋季租房补贴开放加急通道",
+              "en": "the autumn rent support priority channel is open"
+            },
+            "result_set_id": "rent_support_check"
+          }
+        ],
+        "media_id": "rent_support_ai_notice",
+        "metrics": {
+          "shares": 6812,
+          "comments": 511
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information",
+        "current_purpose"
+      ],
+      "accepted_decisions": [
+        "lock"
+      ]
+    },
+    {
+      "id": "d3_museum_ticket_upsell",
+      "day": 3,
+      "title": {
+        "zh-CN": "博物馆周末票",
+        "en": "Weekend Museum Tickets"
+      },
+      "brief": {
+        "zh-CN": "这条帖子引用了博物馆参观数据。",
+        "en": "This post cites museum attendance data."
+      },
+      "post": {
+        "account_id": "museum_digest",
+        "time": "16:10",
+        "body": {
+          "zh-CN": "白塔博物馆最新数据都出来了，周末门票基本当天买不到。怕扑空的直接用我主页那个代订服务，省得周末排队。",
+          "en": "White Tower Museum's latest numbers are out, and weekend tickets are basically unavailable same-day. If you don't want to risk it, use the booking service in my profile."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "周末门票基本当天买不到",
+              "en": "weekend tickets are basically unavailable same-day"
+            },
+            "result_set_id": "museum_attendance_context"
+          }
+        ],
+        "media_id": "",
+        "metrics": {
+          "shares": 1433,
+          "comments": 107
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information",
+        "current_purpose"
+      ],
+      "accepted_decisions": [
+        "lock"
+      ]
+    },
+    {
+      "id": "d4_pixel_moss_ai_concept",
+      "day": 4,
+      "title": {
+        "zh-CN": "AI概念车站",
+        "en": "AI-Assisted Concept Station"
+      },
+      "brief": {
+        "zh-CN": "这条帖子展示了一张创作图片。",
+        "en": "This post shares a piece of creative artwork."
+      },
+      "post": {
+        "account_id": "pixel_moss",
+        "time": "15:06",
+        "body": {
+          "zh-CN": "今天试着做了个不存在的未来车站，前期构图用了AI生成概念图，后面我再照着重画成像素版。纯练习，现实里没有这个地方。",
+          "en": "Made a fictional future station today. I used AI-generated concept art for the early composition, then redrew it as pixel art. Just a study—this place doesn't exist in real life."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "不存在的未来车站",
+              "en": "fictional future station"
+            },
+            "result_set_id": "ai_concept_art_check"
+          }
+        ],
+        "media_id": "pixel_moss_concept",
+        "metrics": {
+          "shares": 418,
+          "comments": 63
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information",
+        "current_purpose"
+      ],
+      "accepted_decisions": [
+        "pass"
+      ]
+    },
+    {
+      "id": "d4_maple_ai_kitchen_photo",
+      "day": 4,
+      "title": {
+        "zh-CN": "后厨投稿图",
+        "en": "Submitted Kitchen Photo"
+      },
+      "brief": {
+        "zh-CN": "这条帖子引用了一张匿名投稿图片。",
+        "en": "This post relies on an anonymously submitted image."
+      },
+      "post": {
+        "account_id": "food_alert_corner",
+        "time": "21:02",
+        "body": {
+          "zh-CN": "匿名投稿说刚从里面出来，枫叶巷餐厅后厨都是虫，这图看得我晚饭都不想吃了。住附近的自己避雷吧。",
+          "en": "Anonymous submission from someone who says they just left the place: the Maple Lane restaurant kitchen is covered in insects. This picture killed my appetite. Locals, you've been warned."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "枫叶巷餐厅后厨都是虫",
+              "en": "the Maple Lane restaurant kitchen is covered in insects"
+            },
+            "result_set_id": "maple_street_inspection"
+          }
+        ],
+        "media_id": "maple_restaurant_ai_photo",
+        "metrics": {
+          "shares": 7421,
+          "comments": 683
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information",
+        "current_purpose"
+      ],
+      "accepted_decisions": [
+        "lock"
+      ]
+    },
+    {
+      "id": "d4_greenroute_commute_claim",
+      "day": 4,
+      "title": {
+        "zh-CN": "通勤调查变排名",
+        "en": "Commute Survey Becomes a Ranking"
+      },
+      "brief": {
+        "zh-CN": "这条企业帖子引用了一份通勤调查。",
+        "en": "This business post cites a commuting survey."
+      },
+      "post": {
+        "account_id": "greenroute_deals",
+        "time": "10:48",
+        "body": {
+          "zh-CN": "交通研究院都证明了，骑共享单车的人通勤效率最高。现在新用户开月卡半价，上班还天天堵在车里的真可以换个方式了。",
+          "en": "The transport institute has proved that bike-share users have the most efficient commute. New users can now get a monthly pass at half price, so maybe it's time to stop sitting in traffic every morning."
+        },
+        "keywords": [
+          {
+            "text": {
+              "zh-CN": "骑共享单车的人通勤效率最高",
+              "en": "bike-share users have the most efficient commute"
+            },
+            "result_set_id": "commute_report_context"
+          }
+        ],
+        "media_id": "",
+        "metrics": {
+          "shares": 2015,
+          "comments": 119
+        }
+      },
+      "rule_ids": [
+        "source",
+        "related_information",
+        "current_purpose"
+      ],
+      "accepted_decisions": [
+        "lock"
+      ]
+    }
+  ]
+}
