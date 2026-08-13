@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f3ecdc">
+  <meta name="description" content="Before You Share is an interactive media and information literacy game about reviewing posts, investigating sources, and deciding what deserves another look.">
+  <title>Before You Share — Media & Information Literacy Game</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><i></i></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span></span></div>
+
+  <header class="topbar">
+    <a class="logo magnetic" href="#top" aria-label="Before You Share home">
+      <b>BYS</b><em>//</em><span data-i18n="brand">MEDIA LITERACY SHIFT</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#shift" data-i18n="navShift">THE SHIFT</a>
+      <a href="#case" data-i18n="navCase">TRY A CASE</a>
+      <a href="#mil" data-i18n="navMil">WHY MIL</a>
+      <a href="#play" data-i18n="navPlay">DEMO</a>
+    </nav>
+    <button class="lang magnetic" type="button" data-lang aria-label="Switch language">EN ↔ 中文</button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-sticky">
+        <div class="radar" aria-hidden="true"></div>
+        <div class="grid" aria-hidden="true"></div>
+
+        <button class="signal s1 drag" data-depth=".7" type="button" aria-label="Trending signal card">
+          <small>TRENDING</small><strong>14,208</strong><span>shares / 17 min</span>
+        </button>
+        <button class="signal s2 drag" data-depth="1.1" type="button" aria-label="Source question signal card">
+          <i></i><strong>SOURCE?</strong>
+        </button>
+        <button class="signal s3 drag" data-depth=".9" type="button" aria-label="Origin signal card">
+          <small>ORIGIN</small><strong>UNKNOWN</strong>
+        </button>
+        <button class="signal s4 drag" data-depth="1.3" type="button" aria-label="Forwarded signal card">
+          <small>FORWARDED</small><span class="lines"></span>
+        </button>
+
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">AN INTERACTIVE MEDIA & INFORMATION LITERACY GAME</p>
+          <h1 aria-label="Before You Share">
+            <span class="w-before">BEFORE</span>
+            <span class="w-you">YOU</span>
+            <span class="w-share">SHARE</span>
+          </h1>
+          <div class="hero-foot">
+            <p data-i18n="heroDeck">A post lands on your desk. The clock is moving. The source is messy. What deserves another look before it travels any further?</p>
+            <div class="actions">
+              <a class="btn primary magnetic" href="#case"><span data-i18n="heroTry">TRY A 60-SECOND CASE</span><b>↘</b></a>
+              <a class="btn magnetic" href="#mil"><span data-i18n="heroMil">EXPLORE MIL</span><b>↓</b></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-status" aria-hidden="true">
+          <span>QUEUE 07</span><span>09:41</span><span class="live">● LIVE</span>
+        </div>
+        <p class="drag-note" data-i18n="dragNote">Drag the signals. Question the feed.</p>
+      </div>
+    </section>
+
+    <section class="shift pad" id="shift">
+      <div class="kicker reveal"><span>01</span><span data-i18n="shiftKicker">THE SHIFT</span></div>
+      <div class="shift-grid">
+        <h2 class="reveal" data-i18n="shiftTitle">YOU ARE NOT THE TRUTH MACHINE.</h2>
+        <div class="body-copy reveal">
+          <p data-i18n="shiftP1">You are the person who decides whether a claim moves forward, slows down, or gets checked again.</p>
+          <p data-i18n="shiftP2">Before You Share turns media literacy into a workplace rhythm: review the post, investigate what is missing, then make a proportionate call.</p>
+        </div>
+      </div>
+      <div class="ticker" aria-hidden="true">
+        <div>REVIEW <i>●</i> INVESTIGATE <i>●</i> DECIDE <i>●</i> REVIEW <i>●</i> INVESTIGATE <i>●</i> DECIDE <i>●</i></div>
+      </div>
+    </section>
+
+    <section class="workflow">
+      <div class="workflow-sticky">
+        <div class="kicker light"><span>02</span><span data-i18n="workflowKicker">THE WORKFLOW</span></div>
+        <div class="workflow-words" aria-hidden="true">
+          <span>REVIEW</span><span>INVESTIGATE</span><span>DECIDE</span>
+        </div>
+        <div class="steps">
+          <article><b>01</b><h3 data-i18n="reviewTitle">Read what is actually claimed.</h3><p data-i18n="reviewText">Not what the headline implies. Not what the comments assume.</p></article>
+          <article><b>02</b><h3 data-i18n="investigateTitle">Look sideways.</h3><p data-i18n="investigateText">Who posted it? Where did it start? What context is missing?</p></article>
+          <article><b>03</b><h3 data-i18n="decideTitle">Make a proportionate call.</h3><p data-i18n="decideText">Sometimes the responsible answer is not “false.” It is “not ready to share.”</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case pad" id="case">
+      <div class="kicker reveal"><span>03</span><span data-i18n="caseKicker">MINI CASE LAB</span></div>
+      <div class="case-head reveal">
+        <h2 data-i18n="caseTitle">DON'T TRUST THE CARD.<br>TOUCH THE EVIDENCE.</h2>
+        <p data-i18n="caseIntro">This training case is fictional. Open the account, source, and image checks before you decide what happens to the post.</p>
+      </div>
+
+      <div class="desk reveal" data-case>
+        <div class="monitor">
+          <div class="screen">
+            <div class="screenbar"><span>RUMOR DESK / REVIEW</span><span>09:47</span></div>
+            <div class="case-grid">
+              <article class="post">
+                <header>
+                  <div class="avatar">?</div>
+                  <div><strong>@MetroPulseNow</strong><small data-i18n="caseMeta">posted 6 min ago · 12.8K shares</small></div>
+                </header>
+                <mark data-i18n="training">FICTIONAL TRAINING POST</mark>
+                <p class="post-copy" data-i18n="casePost">“Night Bus Route 9 becomes free every Friday starting tomorrow. An internal memo confirms it — share this before the announcement.”</p>
+                <div class="fake-media" aria-hidden="true"><span>IMAGE PREVIEW</span><i></i></div>
+                <footer><span>↻ 12.8K</span><span>♡ 21.4K</span><span>▢ 3.1K</span></footer>
+              </article>
+
+              <aside class="evidence">
+                <div class="evidence-title"><span data-i18n="evidenceTitle">EVIDENCE LOG</span><b><span data-count>0</span>/3</b></div>
+                <button type="button" data-evidence="account"><i>@</i><span><b data-i18n="accountCheck">CHECK ACCOUNT</b><small data-i18n="accountHint">Who is speaking?</small></span><em>+</em></button>
+                <button type="button" data-evidence="source"><i>↗</i><span><b data-i18n="sourceCheck">TRACE SOURCE</b><small data-i18n="sourceHint">Where did it start?</small></span><em>+</em></button>
+                <button type="button" data-evidence="image"><i>▧</i><span><b data-i18n="imageCheck">INSPECT IMAGE</b><small data-i18n="imageHint">Does the media match?</small></span><em>+</em></button>
+                <div class="readout" role="status" aria-live="polite"><p data-readout data-i18n="readoutDefault">Choose a check. Evidence will appear here.</p></div>
+              </aside>
+            </div>
+
+            <div class="decision">
+              <p data-i18n="decisionPrompt">YOUR CALL</p>
+              <div>
+                <button type="button" data-decision="hold" data-i18n="hold">HOLD & VERIFY</button>
+                <button type="button" data-decision="share" data-i18n="share">SHARE</button>
+              </div>
+            </div>
+
+            <div class="result" data-result hidden aria-live="polite">
+              <strong data-result-title></strong>
+              <p data-result-copy></p>
+              <button type="button" data-reset data-i18n="reset">RESET CASE ↺</button>
+            </div>
+          </div>
+          <div class="stand" aria-hidden="true"><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mil pad" id="mil">
+      <div class="kicker reveal"><span>04</span><span data-i18n="milKicker">WHY MEDIA & INFORMATION LITERACY</span></div>
+      <div class="mil-head reveal">
+        <h2 data-i18n="milTitle">THE FEED IS FAST.<br>YOUR JUDGMENT CAN BE SLOWER.</h2>
+        <p data-i18n="milIntro">Media and Information Literacy helps people engage critically with information, navigate digital environments, and respond to misinformation and disinformation.</p>
+      </div>
+
+      <div class="stats">
+        <article class="stat reveal">
+          <strong><span data-counter="2">0</span><small>/3</small></strong>
+          <p data-i18n="statCreators">digital content creators do not systematically fact-check information before sharing it online.</p>
+          <em>UNESCO, 2024</em>
+        </article>
+        <article class="stat coral reveal">
+          <strong><span data-counter="85">0</span><small>%</small></strong>
+          <p data-i18n="statConcern">of citizens are worried about the impact of online disinformation.</p>
+          <em>UNESCO / IPSOS, 2023</em>
+        </article>
+        <article class="stat blue reveal">
+          <strong><span data-counter="56">0</span><small>%</small></strong>
+          <p data-i18n="statSocial">of internet users frequently use social media to stay informed about current events.</p>
+          <em>UNESCO / IPSOS, 2023</em>
+        </article>
+      </div>
+
+      <a class="unesco reveal magnetic" href="https://www.unesco.org/en/media-information-literacy" target="_blank" rel="noopener noreferrer">
+        <div>
+          <span data-i18n="learnBeyond">LEARN BEYOND THE GAME</span>
+          <h3>UNESCO<br>MEDIA & INFORMATION LITERACY</h3>
+        </div>
+        <div>
+          <p data-i18n="unescoCopy">Explore UNESCO's Media and Information Literacy resources, initiatives, publications, and learning materials.</p>
+          <b data-i18n="unescoCta">OPEN UNESCO MIL ↗</b>
+        </div>
+      </a>
+      <p class="independent reveal" data-i18n="independent">Before You Share is an independent project. It is not affiliated with or endorsed by UNESCO.</p>
+    </section>
+
+    <section class="play" id="play">
+      <div class="floating-words" aria-hidden="true"><span>CHECK</span><span>SOURCE</span><span>CONTEXT</span><span>PAUSE</span><span>VERIFY</span><span>SHARE?</span></div>
+      <div class="play-inner reveal">
+        <p class="eyebrow" data-i18n="playEyebrow">THE DESK IS OPEN</p>
+        <h2 data-i18n="playTitle">READY FOR<br>YOUR SHIFT?</h2>
+        <p data-i18n="playCopy">The Windows demo is free. Review fictional posts, investigate clues, and see how your decisions shape the shift.</p>
+        <a class="btn huge primary magnetic" href="https://itch.io/" target="_blank" rel="noopener noreferrer">
+          <span data-i18n="playButton">PLAY THE DEMO ON ITCH.IO</span><b>↗</b>
+        </a>
+        <small data-i18n="itchNote">Itch.io link placeholder — replace this with the final project URL.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>BEFORE YOU SHARE</strong><span data-i18n="footerTag">An independent media literacy game.</span></div>
+    <div class="footer-links">
+      <a href="https://github.com/Etholifia/before-you-share" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+      <a href="https://www.unesco.org/en/media-information-literacy" target="_blank" rel="noopener noreferrer">UNESCO MIL ↗</a>
+    </div>
+    <p data-i18n="footerLegal">Website source code: MPL-2.0. Original game artwork, branding, screenshots, and narrative assets: © Etholifia, all rights reserved unless otherwise stated.</p>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
